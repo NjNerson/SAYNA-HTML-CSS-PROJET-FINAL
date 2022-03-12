@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../Assets/styles/bootstrap-5.1.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../Assets/Icones/fontawesome-free-6.0.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a5eba3244d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../Assets/styles/style.css">
     <title>About</title>
 </head>
@@ -13,9 +13,9 @@
     <!--HEADER-->
     <header>
 
-        <div class="row container-fluid">
+        <div class="row container-fluid header">
             <!--logo gauche-->
-            <div class="col logo">
+            <div class="col-sm logo justify-content-start">
                 <p class="text-logo">
                     <img src="../Assets/Images/group-2.svg" alt="">
                     
@@ -25,22 +25,22 @@
             </div>
         
             <!--navbar-->
-            <nav class="col">
+            <nav class="col-sm justify-content-end text-right">
                 <ul>
                     <li>
-                        <a href="./search.html"><i class="fa fa-search" aria-hidden="true"></i> Search</a>
+                        <a href="./search.html"><i class="fa fa-search" aria-hidden="true"></i> <span>Search</span></a>
                     </li>
 
                     <li>
-                        <a href="./about.html"><i class="fa-regular fa-user" aria-hidden="true"></i> About</a>
+                        <a href="./about.html"><i class="fa-regular fa-user" aria-hidden="true"></i> <span>About</span></a>
                     </li>
 
                     <li>
-                        <a href=""><i class="fa fa-rss" aria-hidden="true"></i> Blog</a>
+                        <a href=""><i class="fa fa-rss" aria-hidden="true"></i> <span>Blog</span></a>
                     </li>
 
                     <li>
-                        <a href=""><i class="fa fa-bars" aria-hidden="true"></i> More</a>
+                        <a href=""><i class="fa fa-bars" aria-hidden="true"></i> <span>More</span></a>
                     </li>
                 </ul>
             </nav>
@@ -124,44 +124,44 @@
         <div class="container-fluid">
 
             <!-- footer part with black background -->
-                <section class="footer-top">
+                <section class="footer-top  d-none d-md-block">
 
                     
                     <div class="row justify-content-center footer-nav">
-                        <div class="col nav">
-                            <ul>
-                                <li>
-                                    <a href="">home</a>
+                        <div class="col-md nav">
+                            <ul  class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="../index.html">home</a>
                                 </li>
-                                <li>
+                                <li class="list-inline-item">
                                     <a href="./search.html">search</a>
                                 </li>
-                                <li>
+                                <li class="list-inline-item">
                                     <a href="./about.html">about us</a>
                                 </li>
-                                <li>
-                                    <a href="">advertise</a>
+                                <li class="list-inline-item">
+                                    <a href="../index.html">advertise</a>
                                 </li>
                             </ul>
                         </div>
     
-                        <div class="col icon-location">
+                        <div class="rounded-circle text-center col-md icon-location">
                             <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                         </div>
     
-                        <div class="col social-info">
-                            <ul>
-                                <li>
-                                    <a href="">facebook</a>
+                        <div class="col-md social-info">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="../index.html">facebook</a>
                                 </li>
-                                <li>
-                                    <a href="">twitter</a>
+                                <li class="list-inline-item">
+                                    <a href="../index.html">twitter</a>
                                 </li>
-                                <li>
-                                    <a href="">instagram</a>
+                                <li class="list-inline-item">
+                                    <a href="../index.html">instagram</a>
                                 </li>
-                                <li>
-                                    <a href="">blog</a>
+                                <li class="list-inline-item">
+                                    <a href="../index.html">blog</a>
                                 </li>
                             </ul>
                         </div>
@@ -172,8 +172,7 @@
                         <div class="col subscribe">
                             <h2 class="title">subscribe</h2>
                             <form action="">
-                                <input type="email" name="email" id="email" placeholder="Insert your e-mail here">
-                                <input type="submit" value="send">
+                                <input type="email" name="email" id="email" placeholder="Insert your e-mail here"><input type="submit" value="send">
                             </form>
                         </div>
     
@@ -199,7 +198,7 @@
 
                 <div class="row footer">
                     <div class="col social-net">
-                        <ul>
+                        <ul >
                             <li>
                                 <a href="">
                                     <i class="fa-brands fa-facebook-square" aria-hidden="true"></i>
@@ -207,22 +206,22 @@
                             </li>
                             <li>
                                 <a href="">
-                                    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="">
-                                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="">
-                                    <i class="fa-brands fa-tumblr" aria-hidden="true"></i>
+                                    <i class="fab fa-tumblr" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="">
-                                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
                                 </a>
                             </li>
                         </ul>

@@ -26,7 +26,6 @@ a {
 
 /*header*/
 header {
-    height: 60px;
     background: var(--primary-color);
 }
 
@@ -38,13 +37,11 @@ header a:hover {
 header .logo img {
     width:4em;
     height: 4em;
-    padding-bottom: 2%;
 }
 
 header span.logoName {
     font-size: 2em;
     padding-left: 1.5%;
-    display: inline-block;
     text-shadow: 1.5px 1.5px var(--primary-purple);
 }
 
@@ -60,68 +57,60 @@ nav li a i{
     padding-right: 1.2%;
 }
 
-
-
-
 /*footer*/
 
 footer {
     color: var(--light-gray);
 }
-/*
 footer .container-fluid {
     padding:0;
 }
 
 footer .row {
     margin:0;
-}*/
+}
 
 footer .footer-top {
     margin: 0;
     padding: 0;
-    padding : 4%;
+    padding : 4% 4% 1% 4%;
     background-color: black;
 }
 
 footer .footer-nav{
-    border: 2px solid green;
     padding: 0 10%;
-    width: auto;
 }
-/*
-footer .footer-nav .col {
-    flex-basis: 40%;
+
+footer .footer-nav a:hover {
+    color: var(--primary-gray);
+}
+
+footer .footer-nav .col-md {
     padding: 0;
     padding-top: 15px;
-    border: 2px solid orange;
 }
 
-footer .footer-nav .nav ul{
-    //margin-top: 2.6%;
-}
-
-footer .footer-nav .col ul {
+footer .footer-nav .col-md ul {
+    width: 100%;
     height: 3.5em;
+    display: flex;
     padding: 3.5% 0;
     text-align: center;
+    justify-content: space-around;
     border-top: 1.5px solid var(--light-gray);
     border-bottom: 1.5px solid var(--light-gray);
 }
 
-footer  .footer-nav .col li{
-    font-size: 1em;
-    display: inline;
+footer  .footer-nav .col-md li{
+    font-size: 0.8em;
     font-weight: bold;
     text-transform: uppercase;
 }
-*/
+
 footer .footer-nav .icon-location{
     padding: 26px 0;
     height: 85px;
     max-width: 85px;
-    text-align: center;
-    border-radius: 50%;
     border: 2px solid var(--light-gray);
 }
 
@@ -129,4 +118,121 @@ footer .icon-location i {
     font-size: 2em;
  }
 
+ .info {
+    padding-top: 3.5em;
+    text-align: center;
+ }
 
+ 
+
+.info h2 {
+    font-size: 1.4em;
+    text-transform: capitalize;
+    padding-bottom: 1.2em;
+}
+
+.info a {
+    color: var(--primary-color);
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+.info p {
+    font-size: .9em;
+}
+
+.info .subscribe #email {
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid var(--gray-footer-btn);
+}
+
+.info .subscribe input[type="submit"]{
+    border: none;
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 3px;
+    color: var(--light-gray);
+    background: var(--gray-footer-btn);
+}
+
+.info .subscribe input[type="submit"]:hover {
+    color: var(--primary-gray);
+}
+
+footer .footer {
+    background: var(--gray-footer);
+    height: 3em;
+}
+
+footer .footer ul {
+    padding-top: 15px;
+}
+footer .footer .social-net li{
+    display: inline;
+    padding-left: 5%;
+}
+
+footer .footer li i:hover {
+    color: var(--primary-blue);
+}
+
+footer .footer .copyright {
+    padding-top: 9px;
+    font-size: 0.9em;
+    text-align: right;
+    color: var(--primary-gray);
+    margin-right: 2%;
+
+}
+
+/*media queries for small screen*/
+
+/*header rule*/
+@media screen and (max-width: 992px){
+    header nav li span{
+        display: none;
+    }
+
+    header nav ul {
+        padding: 5% 0;
+    }
+    header nav li {
+        padding-left: 10%;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+
+    header nav li i {
+        font-size: 1.5em;
+    }
+
+    header .logo .logoName {
+        font-size: 2em;
+    }
+    
+}
+@media screen and (max-width: 576px){
+
+    header nav {
+        text-align: center;
+        margin: auto 0;
+    }
+
+    header .logo , header nav {
+        margin: auto 0;
+        
+    }
+    header nav li {
+        padding-left: 15%;
+    }
+
+    header .logo {
+        padding-left: 25%;
+    }
+
+}
