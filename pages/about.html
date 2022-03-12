@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../Assets/styles/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Assets/Icones/fontawesome-free-6.0.0-web/css/all.min.css">
     <link rel="stylesheet" href="../Assets/styles/style.css">
     <title>About</title>
 </head>
@@ -12,32 +13,34 @@
     <!--HEADER-->
     <header>
 
-        <div class="container">
+        <div class="row container-fluid">
             <!--logo gauche-->
-            <div class="logo">
-                <img src="" alt="">
+            <div class="col logo">
                 <p class="text-logo">
-                    <a href="">[Events]</a>
+                    <img src="../Assets/Images/group-2.svg" alt="">
+                    
+                        <span class="logoName"><a href="../index.html">[Events]</a></span>
+                    
                 </p>
             </div>
         
             <!--navbar-->
-            <nav>
+            <nav class="col">
                 <ul>
                     <li>
-                        <a href="">Search</a>
+                        <a href="./search.html"><i class="fa fa-search" aria-hidden="true"></i> Search</a>
                     </li>
 
                     <li>
-                        <a href="">About</a>
+                        <a href="./about.html"><i class="fa-regular fa-user" aria-hidden="true"></i> About</a>
                     </li>
 
                     <li>
-                        <a href="">Blog</a>
+                        <a href=""><i class="fa fa-rss" aria-hidden="true"></i> Blog</a>
                     </li>
 
                     <li>
-                        <a href="">More</a>
+                        <a href=""><i class="fa fa-bars" aria-hidden="true"></i> More</a>
                     </li>
                 </ul>
             </nav>
@@ -47,110 +50,189 @@
 
     <!--MAIN CONTENT-->
     <main>
-        <div class="container">
+        <div class="container-fluid">
             <section class="about-event">
                 <h1 class="event-title">
                     <i class="fa" aria-hidden="true"></i> a sunny beach day
                 </h1>
                 <div class="event-desc row">
-                    <div class="left">
+                    <div class="left col">
                         <p>
                             Location: <span>Current City</span>
                         </p>
                         <p>
-                            Location: <span>Current City</span>
+                            Subject: <span>Beach Time</span>
                         </p>
                         <p>
-                            Location: <span>Current City</span>
+                            Initial Date: <span>21/06/2020</span>
                         </p>
                         <p>
-                            Location: <span>Current City</span>
+                            Subject: <span>Beach Time</span>
                         </p>
                     </div>
 
-                    <div class="right">
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                    <div class="right col">
+                            <p>
+                                Host: <span>Host-name</span>
+                            </p>
+                            <p>
+                                Date: <span>21/06/2020</span>
+                            </p>
+                            <p>
+                                Final Date: <span>21/06/2020</span>
+                            </p>
+                            <p>
+                                Daytime: <span>Daylight</span>
+                            </p>
                         <button class="apply">
                             <i class="fa fa-man" aria-hidden="true"></i>apply
                         </button>
                     </div>
                 </div>
+                <div class="row">
+                    <p class="col"><i class="fa fa-phone" aria-hidden="true"></i> Tel:XXXX-XXXX</p>
+                    <p class="col"><i class="fa fa-user-plus" aria-hidden="true"></i> Bring +1</p>
+                    <p class="col"><i class="fa fa-sun" aria-hidden="true"></i> Day</p>
+                    <p class="col"><i class="fa fa-user-shield" aria-hidden="true"></i> Host verified</p>
+                    <p class="col"><i class="fa fa-bus" aria-hidden="true"></i> Your way</p>
+                    <p class="col"><i class="fa fa-money-bill-1" aria-hidden="true"></i> Not required</p>
+                </div>
+            </section>
+            <div class="separator">
+                <img src="" alt="" srcset="">
+            </div>
+
+            <section class="more-details">
+                <p>
+                    <i class="fa fa-book-medical" aria-hidden="true"></i> CLICK TO VIEW MORE DETAILS
+                </p>
+            </section>
+
+            <section class="map">
+                <h2>
+                    <i class="fa-regular fa-map" aria-hidden="true"></i> MAP DIRECTIONS
+                </h2>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.8635821774774!2d-48.600003085402356!3d-26.78061809415704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8d054d6b5e9a5%3A0x95156f2151be2df9!2sR.%20Waldemar%20Werner%2C%20621%20-%20Praia%20de%20Arma%C3%A7%C3%A3o%20do%20Itapocor%C3%B3i%2C%20Penha%20-%20SC%2C%2088385-000%2C%20Br%C3%A9sil!5e0!3m2!1sfr!2smg!4v1646946312035!5m2!1sfr!2smg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                
             </section>
         </div>
     </main>
 
     <!--FOOTER-->
     <footer>
-            <div class="container">
-                <div class="footer-nav">
-                    <div class="nav">
+        <div class="container-fluid">
+
+            <!-- footer part with black background -->
+                <section class="footer-top">
+
+                    
+                    <div class="row justify-content-center footer-nav">
+                        <div class="col nav">
+                            <ul>
+                                <li>
+                                    <a href="">home</a>
+                                </li>
+                                <li>
+                                    <a href="./search.html">search</a>
+                                </li>
+                                <li>
+                                    <a href="./about.html">about us</a>
+                                </li>
+                                <li>
+                                    <a href="">advertise</a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="col icon-location">
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        </div>
+    
+                        <div class="col social-info">
+                            <ul>
+                                <li>
+                                    <a href="">facebook</a>
+                                </li>
+                                <li>
+                                    <a href="">twitter</a>
+                                </li>
+                                <li>
+                                    <a href="">instagram</a>
+                                </li>
+                                <li>
+                                    <a href="">blog</a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                    </div>
+    
+                    <div class="row info justify-content-between">
+                        <div class="col subscribe">
+                            <h2 class="title">subscribe</h2>
+                            <form action="">
+                                <input type="email" name="email" id="email" placeholder="Insert your e-mail here">
+                                <input type="submit" value="send">
+                            </form>
+                        </div>
+    
+                        <div class="col contact">
+                            <h2 class="title">contact</h2>
+                            <p>Have a question or a suggestion?</p>
+                            <p class="mail-contact">
+                                <a href="mailto:contact@Events.com?subject=Ask Me Anything">contact@Events.com</a>
+                            </p>
+                        </div>
+    
+                        <div class="col about">
+                            <h2 class="title">about</h2>
+                            <p class="desc">
+                                [Events] is an online plateforme that works to improve and increase social life connections, when this nightmare that we are currently living in is over <a href="./about.html" class="learn-more">learn more.</a>
+                            </p>
+    
+                        </div>
+    
+                    </div>
+                </section>
+                
+
+                <div class="row footer">
+                    <div class="col social-net">
                         <ul>
                             <li>
-                                <a href="">home</a>
+                                <a href="">
+                                    <i class="fa-brands fa-facebook-square" aria-hidden="true"></i>
+                                </a>
                             </li>
                             <li>
-                                <a href="">search</a>
+                                <a href="">
+                                    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                                </a>
                             </li>
                             <li>
-                                <a href="">about us</a>
+                                <a href="">
+                                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                </a>
                             </li>
                             <li>
-                                <a href="">advertise</a>
+                                <a href="">
+                                    <i class="fa-brands fa-tumblr" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                                </a>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="icon-location">
-                        <i class="fa fa-location-dot" aria-hidden="true"></i>
-                    </div>
-
-                    <div class="social-info">
-                        <ul>
-                            <li>
-                                <a href="">facebook</a>
-                            </li>
-                            <li>
-                                <a href="">tweeter</a>
-                            </li>
-                            <li>
-                                <a href="">instagram</a>
-                            </li>
-                            <li>
-                                <a href="">blog</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-
-                <div class="info">
-                    <div class="subscribe">
-                        <h2 class="title">subscribe</h2>
-                        <form action="">
-                            <input type="email" name="email" id="email" placeholder="Insert your e-mail here">
-                            <input type="submit" value="send">
-                        </form>
-                    </div>
-
-                    <div class="contact">
-                        <h2 class="title">contact</h2>
-                        <p>Have a question or a suggestion?</p>
-                        <p class="mail-contact">
-                            <a href="mailto:contact@Events.com?subject=Ask us anything">contact@Events.com</a>
+                    <div class="col copyright">
+                        <p>
+                            &copy; 2020 [Events], Inc. All rights reserved
                         </p>
                     </div>
-
-                    <div class="about">
-                        <h2 class="title">about</h2>
-                        <p class="desc">
-                            [Events] is an online plateforme that works to improve and increase social life connections, when this nightmare that we are currently living in is over <a href="" class="learn-more">learn more.</a>
-                        </p>
-
-                    </div>
-
                 </div>
             </div>
     </footer>
