@@ -205,6 +205,127 @@ footer .footer .copyright {
     
 }
 
+
+/*--------------- main -----------------*/
+
+/*
+event schedule
+*/
+main  {
+    background-color: #fff;
+}
+
+main div.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+main .about-event {
+    margin-top: 3em;
+    margin-left: 1.5%;
+    padding-bottom: 25px;;
+    box-shadow: -5px -5px 15px var(--primary-gray);
+}
+
+.about-event h1 {
+    padding: 2%;
+    font-size: 2em;
+    font-weight: bold;
+    word-spacing: 2px;
+    text-align: center;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.event-desc {
+    padding: 0 5%;
+}
+.event-desc div.col p {
+    width: 90%;
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 3px;
+    text-align: center;
+    border: 1px solid white;
+    box-shadow: 0 0 10px grey;
+}
+
+.event-desc div.col p span {
+    font-weight: 700;
+    color: var(--primary-blue);
+    text-transform: capitalize;
+}
+
+.event-desc div:last-child p:last-child {
+    text-align: right;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.event-desc div .apply {
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 0;
+    font-size: 1.05em;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 0 blue;
+}
+
+.about-event > div:last-child {
+    padding: 10px;
+    max-width: 90%;
+    padding-left: 5%;
+
+} 
+
+.about-event > div:last-child p {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.about-event > div:last-child p i{
+    color: var(--primary-blue);
+}
+
+.separator {
+    height: 5px;
+    background: url('../Images/separator.png') repeat-x;
+}
+
+main .more-details {
+    margin: 50px 0;
+    background: rgba(150, 150, 150, 0.1);
+    padding: 2%;
+}
+main .more-details p{
+    margin: 0;
+    padding-left: 24px;
+    font-size: 1.5em;
+    color: var(--gray-footer);
+    letter-spacing: 10px;
+    word-spacing: 5px;
+}
+
+/*
+    MAP
+*/
+.map h2 {
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.map {
+    padding: 0 1%;
+}
+
+iframe {
+    width: 100%;
+    padding-bottom: 2%;
+    
+}
+
 @media screen and (max-width:768px){
 
     header nav li i {
@@ -236,3 +357,4 @@ footer .footer .copyright {
     }
 
 }
+
