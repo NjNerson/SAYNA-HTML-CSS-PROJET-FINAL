@@ -382,19 +382,27 @@ section.filter {
     color: var(--primary-gray);
 }
 
-.filter form{
+.filter form {
+    border: 2px solid black;
+    display: flex;
+    flex-basis: 20%; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:;
 }
 
-.filter form div.row {
+/* .filter form div.form-cont {
     margin: 0;
     padding: 0;
+    display: flex;
     
-}
+} */
 
-.filter form .row div.col-md {
+.filter form div.col-md {
     margin: 0;
     padding: 0;
-    width: 10%;
+    width: auto;
+    border: 1px solid red;
 }
 
 .filter form label {
